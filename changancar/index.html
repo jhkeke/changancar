@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="carApp">
+<head lang="zh-CN">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>长安汽车</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/ca_car.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/ca_car.js"></script>
+</head>
+<body ng-controller="carCtrl">
+
+<div ng-view></div>
+
+
+<script src="js/canvas.js"></script>
+<script language="javascript">
+    window.addEventListener('popstate', function () {
+        history.pushState(null, null, document.URL);
+    });
+</script>
+</body>
+</html>

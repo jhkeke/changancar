@@ -1,0 +1,96 @@
+<div class="detail-nav">
+    <div class="row">
+        <div class="col-xs-4">
+            <a>
+                <img class="detail-logo" ng-src="images/{{dtlList.img_logo}}"/>
+            </a>
+        </div>
+        <div class="col-sm-4 hidden-xs">
+            <ul class="ul-left">
+                <li><a>车型概览</a></li>
+                <li><a>|</a></li>
+                <li><a>外观</a></li>
+                <li><a>|</a></li>
+                <li><a>内饰</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-8 col-sm-4">
+            <ul class="ul-right">
+                <li>
+                    <a href="#carMain">再逛逛</a>
+                </li>
+                <li>
+                <a href="#carOrder/{{dtlList.did}}">预约看车</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div>
+    <img class="img-responsive" ng-src="images/{{dtlList.img_overview}}"/>
+</div>
+<div class="car-pst">
+    <img class="img-responsive" ng-src="images/{{dtlList.img_surface}}"/>
+
+    <div class="car-text">
+        <h1>{{dtlList.surface_description}}</h1>
+    </div>
+</div>
+<div class="container" ng-repeat="list in sfList">
+    <div class="row" ng-if="($index%2)==0" >
+        <div class="col-md-6 car-surface">
+            <img class="img-responsive" ng-src="images/{{list.img_surface_part}}"/>
+        </div>
+        <div class="col-md-6">
+            <div class="car-surface-text">
+                <h1>{{list.img_surface_part_title}}</h1>
+                <p>{{list.img_surface_part_content}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-if="($index%2)!=0">
+        <div class="col-md-6 col-md-push-6 car-surface">
+            <img class="img-responsive" ng-src="images/{{list.img_surface_part}}"/>
+        </div>
+        <div class="col-md-6 col-md-pull-6 car-surface">
+            <div class="car-surface-text">
+                <h1>{{list.img_surface_part_title}}</h1>
+                <p>{{list.img_surface_part_content}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="car-pst">
+    <img class="img-responsive" ng-src="images/{{dtlList.img_trim}}"/>
+
+    <div class="car-text">
+        <h1>{{dtlList.trim_description}}</h1>
+    </div>
+</div>
+<div class="container car-sur" ng-repeat="temp in trList">
+    <div class="row" ng-if="($index%2)==0">
+        <div class="col-md-6 car-surface">
+            <img class="img-responsive" ng-src="images/{{temp.img_trim_part}}"/>
+        </div>
+        <div class="col-md-6">
+            <div class="car-surface-text">
+                <h1>{{temp.img_trim_part_title}}</h1>
+                <p>{{temp.img_trim_part_content}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-if="($index%2)!=0">
+        <div class="col-md-6 col-md-push-6 car-surface">
+            <img class="img-responsive" ng-src="images/{{temp.img_trim_part}}"/>
+        </div>
+        <div class="col-md-6 col-md-pull-6 car-surface">
+            <div class="car-surface-text">
+                <h1>{{temp.img_trim_part_title}}</h1>
+                <p>{{temp.img_trim_part_content}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <span>长安汽车 版权所有 渝ICP备:06006808增值电信业务经营许可证编号：渝B－20160009</span>
+</div>

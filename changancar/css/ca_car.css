@@ -1,0 +1,247 @@
+
+/*body{*/
+    /*padding-top: 50px;*/
+    /*padding-bottom: 50px;*/
+
+/*}*/
+
+.footer{
+    margin-top: 20px;
+    min-height: 30px;
+    border-top: 1px solid #e7e7e7;
+    background: #F8F8F8;
+}
+.order-footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.footer span{
+    display: block;
+    color: #555;
+    line-height: 30px;
+    text-align: center;
+}
+
+@media screen and (min-width: 992px){
+    .car-pst{
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .car-text{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        color: #17335B;
+    }
+    .car-text h1{
+        display: inline-block;
+        margin-left: 25px;
+        padding-bottom: 15px;
+    }
+    .car-text p{
+        margin-left: 25px;
+        line-height: 25px;
+    }
+    .car-text ul li{
+        line-height: 25px; ;
+    }
+    .start-text{
+        margin-top: 10%;
+    }
+    .main-btn{
+        padding-top: 3%;
+    }
+    .user{
+        margin-top: 40px;
+    }
+    .myorder-navbar{
+        margin-top: 50px;
+    }
+}
+@media screen and (min-width: 768px)and (max-width: 991px){
+    .car-pst{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .car-text h1{
+        text-align: center;
+    }
+    .car-text p{
+        margin:0;
+        text-align: center;
+        line-height: 30px;
+        background: #6FAAE4;
+        color: #ffffff;
+    }
+    .car-text ul{
+        list-style: none;
+
+
+    }
+    .car-text ul li{
+        text-align: center;
+        padding: 6px 12px;
+    }
+    .start-text{
+        margin-top: 15%;
+    }
+    .main-btn{
+        padding-top: 4%;
+    }
+    .user{
+        margin-top: 35px;
+    }
+    .myorder-navbar{
+        margin-top: 40px;
+    }
+
+}
+@media screen and (max-width: 767px){
+    .car-pst{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .start-text{
+        margin-top: 25%;
+    }
+    .main-btn{
+        padding-top: 4%;
+    }
+    .user{
+        margin-top: 15px;
+    }
+    .myorder-navbar{
+        margin-top: 15px;
+    }
+}
+.car-color{
+    margin-bottom: 50px;
+}
+.car-color hr{
+    margin-top: 20px;
+}
+.car-color h1{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*.car-sur{*/
+    /*margin-top: 50px;*/
+/*}*/
+.car-surface{
+    padding: 0px;
+}
+.car-surface-text{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.car-surface-text h1{
+    display: inline-block;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+}
+.car-surface-text p{
+    line-height: 30px;
+}
+.car-start{
+    background: url("../images/idea_bg.jpg");
+    overflow: hidden;
+}
+.car-text{
+    text-align: center;
+}
+.start-logo{
+    width:100%;
+    max-width: 200px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.start-text{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: rgba(255,255,255,.1);
+    border-radius: 10px;
+    color: #ffffff;
+}
+.start-text h1{
+    font-size: 3em;
+}
+.start-text p{
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+#container{
+    text-align: center;
+}
+canvas{
+    width: 100%;
+    max-width: 692px;
+}
+.main-logo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width:295px;
+    width: 100%;
+}
+.main-navbar{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.main-btn{
+    text-align: right;
+    font-size: 1em;
+
+}
+.main-text{
+    padding:10px 12px;
+    border: 1px solid #e7e7e7;
+    text-align: center;
+    background: #f7f7f7;
+}
+.detail-nav{
+    min-height: 50px;
+}
+.detail-logo{
+    margin-top: 5px;
+    margin-left: 20px;
+    max-height: 40px;
+}
+.detail-nav ul{
+    list-style: none;
+}
+.detail-nav ul li{
+    /*float: right;*/
+    line-height: 50px;
+    padding:0px 12px;
+}
+.ul-left li{
+    float: left;
+}
+.ul-left li a{
+    color:#000000;
+}
+.ul-right li{
+    float: right;
+}
+.cover{
+    position: relative;
+}
+.regpst{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2000;
+    background: #f7f7f7;
+}
+.user{
+    display: block;
+    text-align: center;
+}
+

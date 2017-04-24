@@ -1,0 +1,38 @@
+<div class="main-navbar">
+    <div class="row">
+        <div class="col-xs-4">
+            <img class="main-logo" src="images/logo.png"/>
+        </div>
+        <div class="col-xs-4 col-xs-offset-4 myorder-navbar user">
+            <a href="#carMain">再逛逛</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h1 class="text-center">个人中心</h1>
+    <table class="table table-responsive">
+        <thead>
+        <tr>
+            <th>编号</th>
+            <th>车型</th>
+            <th>图片</th>
+            <th>预约时间</th>
+            <th>姓名</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="list in orderList">
+            <td>{{list.oid}}</td>
+            <td>{{list.name}}</td>
+            <td>
+                <img ng-src="images/{{list.car_img}}"/>
+            </td>
+            <td>{{list.book_time}}</td>
+            <td>{{list.user_name}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="footer order-footer">
+    <span>长安汽车 版权所有 渝ICP备:06006808增值电信业务经营许可证编号：渝B－20160009</span>
+</div>

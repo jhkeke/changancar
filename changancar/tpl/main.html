@@ -1,0 +1,56 @@
+<div class="main-navbar">
+    <div class="row">
+        <div class="col-xs-4">
+            <img class="main-logo" src="images/logo.png"/>
+        </div>
+    </div>
+</div>
+<div class="container car-pst">
+    <!--input-->
+    <div class="form-group has-feedback">
+        <input type="text"
+               ng-model="kw"
+               class="form-control"/>
+        <span class="form-control-feedback glyphicon glyphicon-search"></span>
+    </div>
+
+    <!--list-->
+    <div class="list-group">
+        <a href="#/carDetail/{{list.did}}"
+           ng-repeat="list in carList"
+           class="list-group-item">
+            <div class="media">
+                <div class="media-left media-middle">
+                    <img class="media-object animated zoomIn"
+                         ng-mousemove="func()"
+                         ng-src="images/{{list.car_img}}"/>
+                </div>
+                <div class="media-body animated lightSpeedIn">
+                    <h3>{{list.name}}</h3>
+                    <p>{{list.type}}
+                        <span>-</span>
+                        {{list.surface_description}}
+                        <span>+</span>
+                        {{list.trim_description}}
+                    </p>
+                    <p>{{list.price}}</p>
+                </div>
+            </div>
+        </a>
+
+
+    <!--button-->
+    <button
+            ng-show="hasMore"
+            ng-click="loadMore()"
+            class="btn btn-success btn-block">加载更多</button>
+
+    <p ng-hide="hasMore" class="main-text">没有更多数据可以加载了</p>
+
+    </div>
+    </div>
+    <div class="footer order-footer">
+
+        <span>长安汽车 版权所有 渝ICP备:06006808增值电信业务经营许可证编号：渝B－20160009</span>
+
+    </div>
